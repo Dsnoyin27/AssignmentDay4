@@ -1,6 +1,6 @@
 function words(str) {
-    //This code splits a string to array of strings
-    var words = str.split('');
+    //This code splits a string to array of strings with /\s+/ which splits delimeters
+    var words = str.split(/\s+/);
     var dict = {};
     //This code loops through the arrays and returns a dictionary
     for(let i = 0; i < words.length; i += 1){
